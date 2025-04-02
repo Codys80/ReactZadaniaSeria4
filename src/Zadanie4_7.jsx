@@ -94,7 +94,7 @@ function Zadanie4_7(){
               type="date" 
               id="eventDate " 
               className="form-control" 
-              {...register("eventDate", { required: true, valueAsDate: true, min: Date.now()})} 
+              {...register("eventDate")} 
             /> 
             {errors.eventDate && <p className="text-danger">{errors.eventDate.message}</p>} 
           </div>
@@ -105,7 +105,7 @@ function Zadanie4_7(){
               type="number" 
               id="ticket " 
               className="form-control" 
-              {...register("ticket", { required: true, min: 1, max: 5})} 
+              {...register("ticket")} 
             /> 
             {errors.ticket && <p className="text-danger">{errors.ticket.message}</p>} 
           <button type="submit" className="btn btn-primary">Wyślij</button> 
